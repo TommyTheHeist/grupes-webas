@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupės dainos</title>
+</head>
+
+
+<style>
+    /* Make sure body and html are full height */
+    body, html {
+        height: 100%;
+        margin: 0;
+
+    }
+
+    /* Flexbox container to center video and text */
+    .containervideo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh; /* Full height of the viewport */
+        position: relative; /* For absolute positioning of text */
+    }
+
+    /* Video size */
+    video {
+        width: 800px; /* Set width */
+        height: auto; /* Adjust height automatically */
+        border: none; /* Remove video border */
+    }
+
+    /* Text styling */
+    .overlay-text1 {
+        position: absolute; /* Position text over video */
+        top: 0px; /* Adjust as needed */
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+        text-align: center;
+    }
+
+
+    .audio-group {
+            display: flex;
+            flex-direction: column; /* Stack text and audio vertically */
+            align-items: center; /* Center items horizontally */
+            margin: 20px; /* Space between groups */
+        }
+
+        /* Audio player size */
+        audio {
+            width: 300px; /* Set width of audio player */
+            margin-bottom: 10px; /* Space between label and audio player */
+        }
+
+        /* Text styling */
+        .label {
+            color: rgb(255, 255, 255); /* Text color */
+            font-size: 24px; /* Font size */
+            font-weight: bold; /* Font weight */
+            text-align: center; /* Center text alignment */
+        }
+
+
+        .text-with-icons {
+            display: flex;
+            align-items: center; /* Center items vertically */
+            margin: 20px; /* Space around the group */
+        }
+
+        /* Icon styling */
+        .icon {
+            width: 30px; /* Set icon size */
+            height: 30px; /* Set icon size */
+            margin: 0 10px; /* Space between icons and text */
+        }
+
+        /* Text styling */
+        .text {
+            font-size: 24px; /* Font size */
+            font-weight: bold; /* Font weight */
+        }
+
+
+
+</style>
+
+
+
+
+
+<body style="background: url(https://images3.alphacoders.com/572/572643.jpg); background-size: cover; background-attachment: fixed; color: white">
+
+
+
+    <!-- VIDEO----------------------------------------------------------------------------------- -->
+    <p align="center" style="font-size:30px">Geriausios dainos mano galva</p>
+
+
+        <div class="containervideo">
+                <div class="overlay-text1">
+                Welcome To The Jungle
+                </div>
+
+                <video controls>
+                    <source src="videos/Guns N' Roses  - Welcome To The Jungle  (Live at The Ritz 1988 HD).mp4" type="video/mp4">
+                </video>
+        </div>
+
+
+
+
+
+        <div class="containervideo">
+            <div class="overlay-text1">
+            November Rain
+            </div>
+
+            <video controls>
+                <source src="videos/Guns N' Roses - November Rain  (Tokyo 1992)  HD Remastered.mp4" type="video/mp4">
+            </video>
+         </div>
+
+
+
+
+
+
+        <div class="containervideo">
+            <div class="overlay-text1">
+            Sweet Child O' Mine
+            </div>
+
+            <video controls>
+                <source src="videos/Guns N' Roses - Sweet Child O' Mine (Official Music Video).mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+<!-- GARSO TAKELIU SEKCIJA------------------------------------------------------ -->
+
+    <div class="text-with-icons">
+        <!-- First Icon -->
+        <img src="images/flame.webp" alt="Flame ikonele" width="100">
+        
+        <!-- Text -->
+        <span class="text">O čia garso takeliai. Išcentruot šitą tekstą kolkas man jau per daug....... ://///</span>
+        
+        <!-- Second Icon -->
+        <img src="images/flame.webp" alt="Flame ikonele" width="100">
+    </div>
+
+
+
+
+<!-- GARSO TAKELIAI -->
+
+    <div class="audio-group">
+        <!-- Label for Sound 1 -->
+        <div class="label">Sweet Child O' Mine</div>
+        <!-- Audio Tag for Sound 1 -->
+        <audio controls>
+            <source src="sounds/Guns N Roses - Sweet Child O Mine (lyrics).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="audio-group">
+        <!-- Label for Sound 2 -->
+        <div class="label">Welcome To The Jungle</div>
+        <!-- Audio Tag for Sound 2 -->
+        <audio controls>
+            <source src="sounds/Guns N' Roses  - Welcome To The Jungle  (Live at The Ritz 1988 HD).mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+
+    <div class="audio-group">
+        <!-- Label for Sound 2 -->
+        <div class="label">November Rain</div>
+        <!-- Audio Tag for Sound 2 -->
+        <audio controls>
+            <source src="sounds/Guns N' Roses - November Rain  (Tokyo 1992)  HD Remastered.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <br><br><br><br>
+    <a href="index.html">
+        <button>Į PRADŽIĄ</button>
+    </a>
+
+
+</body>
+</html>
